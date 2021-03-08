@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <!-- {{ }} 双花括号解析出的模板为： &lt;meta charset=&quot;UTF-8&quot;&gt; -->
+    {{{ meta }}}
+</head>
+<body>
+    <!-- 激活字符串html者 -->
+    <!-- vue-ssr-outlet --> 
+    此外，模板支持一些高级特性，例如：
+    在使用 *.vue 组件时，自动注入「关键的 CSS(critical CSS)」；
+    在使用 clientManifest 时，自动注入「资源链接(asset links)和资源预加载提示(resource hints)」；
+    在嵌入 Vuex 状态进行客户端融合(client-side hydration)时，自动注入以及 XSS 防御。
+</body>
+</html>
