@@ -6,10 +6,23 @@ var Vue = require('vue')
 var renderer = require('vue-server-renderer')
 
 
-router.get('/', (req, res) => {
-
+router.get('/', (req, res)  => {
+  req.setEncoding('utf-8')
+  res.header('Content-Type','text/html')
+  res.end(`
+    <!DOCTYPE html>
+    <html lang='en'>
+      <head></head>
+      <body>
+      <ol>
+        <li><a href='https://ssr.vuejs.org/zh/'>官网</a></li>
+        <li><a href='https://ssr.vuejs.org/zh/api/#createrenderer'>官网API</a></li>
+        <li><a href=' https://www.nuxtjs.cn/guide/installation'>官方服务端渲染框架nuxt。js</a></li>
+      </ol>
+      </body>
+    </html>
+  `)
 })
-
 
 
 // 模板写法

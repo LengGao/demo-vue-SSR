@@ -12,8 +12,6 @@ var app = express();
 
 // view engine s  etup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
 app.set('pages', path.join(__dirname, 'pages'))
 
 
